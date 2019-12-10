@@ -7,4 +7,6 @@ class Plane():
 
     def add_plane_number(self, plane_no):
         new_plane_number = self
-        new_plane_number.plane_number.append(plane_no)
+        self.plane_number.append(plane_no)
+
+plane_list = []
