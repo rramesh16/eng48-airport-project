@@ -11,7 +11,6 @@ while True:
     print("2: Add a new plane to the system")
     print("3: List all flights")
     print("4: Add passenger to a flight")
-    # print("5: Remove a passenger from the passenger list")
     user_input = input("Please enter the option number...")
 
     if user_input == '1':
@@ -53,27 +52,9 @@ while True:
             counter += 1
         passenger_to_be_added = input('Choose a passenger from the list above:')
         if flight_to_add_passenger == '1':
-            if passenger_to_be_added == '1':
-                flight1.add_passengers(list_of_passengers[0].passport_no)
-            elif passenger_to_be_added == '2':
-                flight1.add_passengers(list_of_passengers[1].passport_no)
-            elif passenger_to_be_added == '3':
-                flight1.add_passengers(list_of_passengers[2].passport_no)
-            elif passenger_to_be_added == '4':
-                flight1.add_passengers(list_of_passengers[3].passport_no)
-            elif passenger_to_be_added == '5':
-                flight1.add_passengers(list_of_passengers[4].passport_no)
+                flight1.add_passengers(list_of_passengers[int(passenger_to_be_added)-1].passport_no)
         elif flight_to_add_passenger == '2':
-            if passenger_to_be_added == '1':
-                flight2.add_passengers(list_of_passengers[0].passport_no)
-            elif passenger_to_be_added == '2':
-                flight2.add_passengers(list_of_passengers[1].passport_no)
-            elif passenger_to_be_added == '3':
-                flight2.add_passengers(list_of_passengers[2].passport_no)
-            elif passenger_to_be_added == '4':
-                flight2.add_passengers(list_of_passengers[3].passport_no)
-            elif passenger_to_be_added == '5':
-                flight2.add_passengers(list_of_passengers[4].passport_no)
+                flight2.add_passengers(list_of_passengers[int(passenger_to_be_added)-1].passport_no)
         print('Passenger added to the chosen flight')
         print("Please choose another option or enter 'end' to exit.")
 

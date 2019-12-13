@@ -32,6 +32,7 @@ flight1.add_destination('Chicago')
 flight1.add_origin('London')
 flight1.add_plane('BA006')
 
+
 flight2 = Flight()
 flight2.add_destination('Dubai')
 flight2.add_origin('Sydney')
