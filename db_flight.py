@@ -39,13 +39,13 @@ class AirportFlights(MSDBConnnection):
         choose_passenger = input('Please enter the id number of the passenger you want to add:')
 
         if choose_flight == '1':
-            query = f"INSERT INTO Flight(PlaneID, Origin, Destination, PassengerID) VALUES ('1', 'London', 'Chicago', '{choose_passenger}'})"
+            query = f"INSERT INTO Flight(PlaneID, Origin, Destination, PassengerID) VALUES ('1', 'London', 'Chicago', '{choose_passenger}')"
             result = self.cursor.execute(query)
             self.cursor.commit()
             print('All done. Thank you!')
 
         elif choose_flight == '2':
-            query = f"INSERT INTO Flight(PlaneID, Origin, Destination, PassengerID) VALUES ('2', 'Sydney', 'Dubai', '{choose_passenger}'})"
+            query = f"INSERT INTO Flight(PlaneID, Origin, Destination, PassengerID) VALUES ('2', 'Sydney', 'Dubai', '{choose_passenger}')"
             result = self.cursor.execute(query)
             self.cursor.commit()
             print('All done. Thank you!')

@@ -22,3 +22,6 @@ while True:
         print('List all flights')
         flight_table.print_all()
         print('///End of flight list///')
+
+    elif user_input == '3'
+        
