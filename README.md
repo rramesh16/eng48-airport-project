@@ -28,15 +28,13 @@ This file has the specification for the airport.
 
 ## Testing:
 - Run the 'test_file.py' file 
+- The test file compiles with the user stories
 
 ## Running:
 - The run file 'run_file.py' takes in user's input, evaluates their response and replies with appropriate information. 
+- Queries for the database can be ran on the run_db file
 
-### Task - 10/12
-1. create passenger
-2. List all flights
-3. Add passenger to a flight
-4. Go to SQL sever and create the three table for passenger, flight and planes
-5. These tables should have all the columns they need (First Name, Last Name, Passport Number)
-6. Add one data point(insert) to each table 
-7. Try to connect via your python project 
+## Database
+- This repo now has a MS SQL server 'Airport' database connected
+- On the db_flight file functions are defined to create a passenger - this can be ran on the run_db file
+- On the db_passenger file functions are defined to list all fligts and add passengers to a specific flight - this can be ran on the run_db file
