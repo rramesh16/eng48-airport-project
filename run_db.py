@@ -23,5 +23,6 @@ while True:
         flight_table.print_all()
         print('///End of flight list///')
 
-    elif user_input == '3'
-        
+    elif user_input == '3':
+        print('Add passenger to a flight')
+        flight_table.add_passenger_to_flight()
