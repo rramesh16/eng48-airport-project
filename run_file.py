@@ -3,6 +3,7 @@ from passengers_class import *
 from flight_class import *
 from plane_class import *
 
+
 print("///Welcome to the Gathrow Aiport portal!///")
 while True:
     import time
@@ -29,9 +30,6 @@ while True:
         print('Plane:',new_plane_number.plane_number, 'is now added to the system.')
         print("Please choose another option or enter 'end' to exit.")
 
-        # plane_list.append(Plane(new_plane_number))
-        # for plane in plane_list:
-        #     print(plane.plane_number)
 
     elif user_input == '3':
         print('/// List of Flights///')

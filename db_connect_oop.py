@@ -3,7 +3,7 @@ import pyodbc
 class MSDBConnnection():
     def __init__(self):
         self.server = 'localhost,1433'
-        self.database = 'Northwind'
+        self.database = 'Airport'
         self.username = 'SA'
         self.password = 'Passw0rd2018'
 
